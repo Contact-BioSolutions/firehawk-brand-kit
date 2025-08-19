@@ -36,13 +36,12 @@
   ],
   "author": "Contact BioSolutions",
   "license": "UNLICENSED",
-  "private": true,
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Contact-BioSolutions/fh-brand-kit.git"
+    "url": "git+https://github.com/Contact-BioSolutions/fh-brand-kit.git"
   },
   "devDependencies": {
     "tsup": "^8.0.0",
