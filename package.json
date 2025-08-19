@@ -1,6 +1,6 @@
 {
   "name": "@contact-biosolutions/fh-brand-kit",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Contact BioSolutions brand kit with design tokens and Tailwind CSS configuration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
