@@ -5,6 +5,27 @@ All notable changes to the Contact BioSolutions Brand Kit will be documented in 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.2] - 2026-01-19
+
+### Changed
+- **Tailwind CSS v4 Compatibility**: Updated `peerDependencies` to support both Tailwind CSS v3 and v4
+  - Now accepts: `^3.0.0 || ^4.0.0`
+  - Preset configuration verified compatible with Tailwind v4.1.18
+  - No breaking changes - existing v3 projects continue to work
+
+### Migration Guide
+
+No code changes required. This is a metadata-only update to declare compatibility with Tailwind CSS v4.
+
+**For projects already on Tailwind v4:**
+```bash
+pnpm install @contact-biosolutions/firehawk-brand-kit@0.6.2
+```
+This update will eliminate the peer dependency warning.
+
+**For projects on Tailwind v3:**
+No action needed - the package continues to work with v3.
+
 ## [0.6.0] - 2026-01-19
 
 ### BREAKING CHANGES
