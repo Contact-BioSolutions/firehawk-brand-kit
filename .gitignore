@@ -48,3 +48,5 @@ yarn.lock
 pnpm-lock.yaml
 
 # Note: package-lock.json is tracked for consistent CI/CD builds
+
+inbox/

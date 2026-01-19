@@ -2,7 +2,7 @@
 
 **Session Date**: August 15, 2025  
 **Project**: Contact BioSolutions Brand Kit Development  
-**Repository**: https://github.com/Contact-BioSolutions/fh-brand-kit
+**Repository**: https://github.com/Contact-BioSolutions/firehawk-brand-kit
 
 ## Overview
 
@@ -11,7 +11,7 @@ This session focused on creating a comprehensive brand kit for Contact BioSoluti
 ## Phase 1: Initial Brand Kit Setup ✅
 
 ### Package Foundation
-- **Created**: Scoped npm package `@contact-biosolutions/fh-brand-kit`
+- **Created**: Scoped npm package `@contact-biosolutions/firehawk-brand-kit`
 - **Setup**: TypeScript with full type definitions
 - **Configured**: Tailwind CSS preset and design tokens
 - **Added**: CSS custom properties for non-Tailwind usage
@@ -76,7 +76,7 @@ This session focused on creating a comprehensive brand kit for Contact BioSoluti
 ## Technical Achievements
 
 ### Package Features
-- ✅ **Scoped Package**: `@contact-biosolutions/fh-brand-kit`
+- ✅ **Scoped Package**: `@contact-biosolutions/firehawk-brand-kit`
 - ✅ **Multi-format Support**: ESM, CJS, TypeScript definitions
 - ✅ **Tailwind Integration**: Complete preset with FireHawk colors
 - ✅ **CSS Custom Properties**: Framework-agnostic usage
@@ -115,21 +115,21 @@ Processed Assets Summary:
 
 ### Installation
 ```bash
-npm install @contact-biosolutions/fh-brand-kit
+npm install @contact-biosolutions/firehawk-brand-kit
 ```
 
 ### Tailwind Integration
 ```js
 // tailwind.config.js
 module.exports = {
-  presets: [require('@contact-biosolutions/fh-brand-kit/tailwind/preset')],
+  presets: [require('@contact-biosolutions/firehawk-brand-kit/tailwind/preset')],
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
 }
 ```
 
 ### Design Token Usage
 ```js
-import { colors } from '@contact-biosolutions/fh-brand-kit';
+import { colors } from '@contact-biosolutions/firehawk-brand-kit';
 const primaryGreen = colors.brand.primary[500]; // #2D5A47
 const brandOrange = colors.brand.secondary[500]; // #F55A2B
 ```
@@ -223,9 +223,9 @@ This session successfully delivered a complete, production-ready brand kit syste
 - ✅ **Brand Compliance**: 100% adherence to provided materials
 
 #### Production Ready
-- **Package**: `@contact-biosolutions/fh-brand-kit@0.2.0`
-- **Repository**: https://github.com/Contact-BioSolutions/fh-brand-kit
-- **Installation**: `npm install @contact-biosolutions/fh-brand-kit`
+- **Package**: `@contact-biosolutions/firehawk-brand-kit@0.2.0`
+- **Repository**: https://github.com/Contact-BioSolutions/firehawk-brand-kit
+- **Installation**: `npm install @contact-biosolutions/firehawk-brand-kit`
 - **Integration**: Ready for immediate team adoption
 
 **Status**: ✅ **SESSION FINALIZED - ENTERPRISE DEPLOYMENT READY**

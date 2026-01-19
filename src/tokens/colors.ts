@@ -1,32 +1,84 @@
+/**
+ * FireHawk Brand Colors - 2025 Official Guidelines
+ * Source: Chase Design Group (July 2025)
+ *
+ * Primary Colors:
+ * - DEEP GREEN (PMS 627C): #10392C (R16 G57 B44)
+ * - FIREHAWK ORANGE (PMS 1655C): #EB5412 (R235 G84 B18)
+ *
+ * Secondary Colors:
+ * - PALE GREEN (PMS 365C): #CAE098 (R202 G222 B152)
+ * - OFF WHITE (PMS COOL GRAY 1C): #F7F4EE (R247 G244 B238)
+ * - DANDELION YELLOW (PMS 7548C): #FBBC00 (R251 G188 B0)
+ */
+
 export const colors = {
   brand: {
+    // Official 2025 Brand Colors (PMS reference codes)
+    deepGreen: '#10392C',    // DEEP GREEN (PMS 627C) - Primary - R16 G57 B44
+    orange: '#EB5412',        // FIREHAWK ORANGE (PMS 1655C) - Primary - R235 G84 B18
+    paleGreen: '#CAE098',     // PALE GREEN (PMS 365C) - Secondary - R202 G222 B152
+    offWhite: '#F7F4EE',      // OFF WHITE (PMS COOL GRAY 1C) - Secondary - R247 G244 B238
+    yellow: '#FBBC00',        // DANDELION YELLOW (PMS 7548C) - Secondary - R251 G188 B0
+
+    // Primary color scale - DEEP GREEN based
     primary: {
-      50: '#f0f8f5',
-      100: '#dbeedf', 
-      200: '#b8ddc2',
-      300: '#8ac49c',
-      400: '#5ca675',
-      500: '#2d5a47', // FireHawk Deep Green
-      600: '#26503f',
-      700: '#1f4636',
-      800: '#183c2e',
-      900: '#123225',
-      950: '#0c281d',
+      50: '#e8f2f0',
+      100: '#c6e0da',
+      200: '#a0cdc2',
+      300: '#7ab9aa',
+      400: '#5ea798',
+      500: '#429686',
+      600: '#3c867e',
+      700: '#337373',
+      800: '#2b6169',
+      900: '#10392C',  // Official DEEP GREEN (PMS 627C)
     },
+
+    // Secondary color scale - FIREHAWK ORANGE based
     secondary: {
-      50: '#fef5f1',
-      100: '#fde8dc',
-      200: '#fcd0b9',
-      300: '#fab286',
-      400: '#f78952',
-      500: '#f55a2b', // FireHawk Orange
-      600: '#e84314',
-      700: '#d2330c',
-      800: '#b62a0a',
-      900: '#9a2409',
-      950: '#7e1d07',
+      50: '#fef5f0',
+      100: '#fde6da',
+      200: '#fcd5c2',
+      300: '#fac4aa',
+      400: '#f8b798',
+      500: '#f7aa86',
+      600: '#f69a6e',
+      700: '#f38551',
+      800: '#f16f36',
+      900: '#EB5412',  // Official FIREHAWK ORANGE (PMS 1655C)
     },
+
+    // Accent color - Uses DEEP GREEN for primary CTAs
     accent: {
+      50: '#e8f2f0',
+      100: '#c6e0da',
+      200: '#a0cdc2',
+      300: '#7ab9aa',
+      400: '#5ea798',
+      500: '#10392C',  // Official DEEP GREEN - Primary CTA color
+      600: '#0a2d23',
+      700: '#081f1a',
+      800: '#061612',
+      900: '#06191a',
+    }
+  },
+
+  neutral: {
+    50: '#f9fafb',
+    100: '#f3f4f6',
+    200: '#e5e7eb',
+    300: '#d1d5db',
+    400: '#9ca3af',
+    500: '#6b7280',
+    600: '#4b5563',
+    700: '#374151',
+    800: '#1f2937',
+    900: '#111827',
+  },
+
+  semantic: {
+    success: {
       50: '#f0fdf4',
       100: '#dcfce7',
       200: '#bbf7d0',
@@ -37,46 +89,42 @@ export const colors = {
       700: '#15803d',
       800: '#166534',
       900: '#14532d',
-      950: '#052e16',
-    }
-  },
-  neutral: {
-    50: '#fafafa',
-    100: '#f5f5f5', // FireHawk Gray Light
-    200: '#e4e4e7',
-    300: '#d4d4d8',
-    400: '#a1a1aa',
-    500: '#9e9e9e', // FireHawk Gray Medium
-    600: '#52525b',
-    700: '#3f3f46',
-    800: '#27272a',
-    900: '#18181b',
-    950: '#09090b',
-  },
-  semantic: {
-    success: {
-      50: '#f0fdf4',
-      500: '#2e7d32', // FireHawk Success
-      600: '#1b5e20',
-      700: '#1b5e20',
     },
     warning: {
       50: '#fffbeb',
-      500: '#f57c00', // FireHawk Warning
-      600: '#ef6c00',
-      700: '#e65100',
+      100: '#fef3c7',
+      200: '#fde68a',
+      300: '#fcd34d',
+      400: '#fbbf24',
+      500: '#f59e0b',
+      600: '#d97706',
+      700: '#b45309',
+      800: '#92400e',
+      900: '#78350f',
     },
     error: {
       50: '#fef2f2',
-      500: '#c62828', // FireHawk Error
-      600: '#b71c1c',
-      700: '#b71c1c',
+      100: '#fee2e2',
+      200: '#fecaca',
+      300: '#fca5a5',
+      400: '#f87171',
+      500: '#ef4444',
+      600: '#dc2626',
+      700: '#b91c1c',
+      800: '#991b1b',
+      900: '#7f1d1d',
     },
     info: {
       50: '#eff6ff',
-      500: '#1565c0', // FireHawk Info
-      600: '#1976d2',
-      700: '#1976d2',
+      100: '#dbeafe',
+      200: '#bfdbfe',
+      300: '#93c5fd',
+      400: '#60a5fa',
+      500: '#3b82f6',
+      600: '#2563eb',
+      700: '#1d4ed8',
+      800: '#1e40af',
+      900: '#1e3a8a',
     }
   }
 };

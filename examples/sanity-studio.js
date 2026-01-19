@@ -9,7 +9,7 @@ import { visionTool } from '@sanity/vision'
 import { schemaTypes } from './schemas'
 
 // Import brand styles
-import '@contact-biosolutions/fh-brand-kit/css/base.css'
+import '@contact-biosolutions/firehawk-brand-kit/css/base.css'
 
 export default defineConfig({
   name: 'agronomy-central',

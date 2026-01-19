@@ -5,6 +5,156 @@ All notable changes to the Contact BioSolutions Brand Kit will be documented in 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 2026-01-19
+
+### BREAKING CHANGES
+- **Color Values Updated to July 2025 Brand Guide**: Three brand colors have been corrected to match the most recent official specifications
+  - **Deep Green**: Changed from `#0D382C` to `#10392C` (R16 G57 B44)
+  - **Off White**: Changed from `#F7F2ED` to `#F7F4EE` (R247 G244 B238)
+  - **Dandelion Yellow**: Changed from `#FCBC00` to `#FBBC00` (R251 G188 B0)
+
+### Added
+- **Typography System**: Complete Roboto font family integration (Google Fonts)
+  - Headlines: Roboto Condensed - Black (900)
+  - Sub-headings: Roboto Serif - Medium (500)
+  - Body Text: Roboto - Regular (400), Italic, Bold (700) & Black (900)
+- **Google Fonts Integration**: Added `googleFontsUrl` export with pre-configured font loading URL
+- **Typography Tailwind Utilities**: New font family utilities (`font-heading`, `font-subheading`, `font-body`)
+- **Brand Guidelines Documentation**: Comprehensive `BRAND_GUIDELINES.md` covering:
+  - Complete brand strategy and messaging
+  - Visual identity specifications
+  - Tone of voice guidelines
+  - Audience-specific messaging (Home & Garden, Landscaping, Agriculture)
+  - EPA regulatory compliance guidelines
+  - Usage examples and code snippets
+
+### Changed
+- **Tailwind Preset**: Extended with typography configuration
+- **Typography Tokens**: Replaced placeholder fonts (Inter, Merriweather, JetBrains Mono) with official brand fonts (Roboto family)
+- **Documentation**: Updated all references to July 2025 brand guide (from June 2025)
+- **Color Scales**: Updated primary-900, secondary-900, and accent-500 values to match corrected Deep Green
+
+### Migration Guide
+
+**Update your dependencies:**
+```bash
+npm install @contact-biosolutions/firehawk-brand-kit@0.6.0
+```
+
+**Color Changes (Minor):**
+These are subtle corrections - visual differences will be minimal:
+```js
+// Color corrections (v0.5.0 → v0.6.0)
+deepGreen: '#0D382C' → '#10392C'  // Slightly lighter
+offWhite: '#F7F2ED' → '#F7F4EE'   // Slightly cooler
+yellow: '#FCBC00' → '#FBBC00'     // Slightly darker
+```
+
+**Typography Integration:**
+```javascript
+// Add Google Fonts to your HTML/CSS
+import { googleFontsUrl } from '@contact-biosolutions/firehawk-brand-kit';
+
+// In HTML:
+<link href={googleFontsUrl} rel="stylesheet">
+
+// Or in CSS:
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto+Condensed:wght@900&family=Roboto+Serif:wght@500&display=swap');
+
+// Use in Tailwind:
+<h1 class="font-heading font-black">Headline</h1>
+<h2 class="font-subheading font-medium">Sub-heading</h2>
+<p class="font-body">Body text</p>
+```
+
+**Testing**: Visually review brand colors (changes are subtle). Ensure Google Fonts are loaded for typography to display correctly.
+
+## [0.5.0] - 2026-01-19
+
+### BREAKING CHANGES
+- **Brand Colors Updated to 2025 Official Guidelines**: All brand colors have been updated to match FireHawk's official 2025 brand guidelines from Chase Design Group (June 2025)
+- **Primary Deep Green**: Changed from `#2d5a47` to `#0D382C` (PMS 627C)
+- **Primary FireHawk Orange**: Changed from `#f55a2b` to `#EB5412` (PMS 1655C)
+
+### Added
+- **Official 2025 Secondary Colors**:
+  - Pale Green: `#CAE098` (PMS 365C)
+  - Off White: `#F7F2ED` (PMS COOL GRAY 1C)
+  - Dandelion Yellow: `#FCBC00` (PMS 7548C)
+- **New Tailwind Utilities**: Added utility classes for secondary brand colors (`brand-pale-green`, `brand-off-white`, `brand-yellow`)
+- **PMS Color References**: All brand colors now include Pantone Matching System (PMS) codes for print accuracy
+
+### Changed
+- **Primary Color Scale**: Complete rebuild based on official DEEP GREEN (#0D382C)
+- **Secondary Color Scale**: Complete rebuild based on official FIREHAWK ORANGE (#EB5412)
+- **Accent Color**: Now uses official DEEP GREEN for consistency with primary CTAs
+- **Tailwind Preset**: Updated with all 2025 brand colors
+- **Documentation**: Updated to reflect 2025 brand guidelines
+
+### Migration Guide
+
+**IMPORTANT**: This update changes the visual appearance of all brand colors. Review your designs after upgrading.
+
+**Update your dependencies:**
+```bash
+npm install @contact-biosolutions/firehawk-brand-kit@0.5.0
+```
+
+**Color Changes:**
+```js
+// OLD (0.4.0)
+primary-500: '#2d5a47'  // Wrong color
+secondary-500: '#f55a2b'  // Wrong color
+
+// NEW (0.5.0)
+primary-900: '#0D382C'  // Correct - Official DEEP GREEN
+secondary-900: '#EB5412'  // Correct - Official FIREHAWK ORANGE
+
+// New secondary colors available
+'brand-pale-green': '#CAE098'
+'brand-off-white': '#F7F2ED'
+'brand-yellow': '#FCBC00'
+```
+
+**Testing**: After upgrading, visually review all components using brand colors to ensure they match the 2025 brand guidelines.
+
+## [0.4.0] - 2026-01-19
+
+### BREAKING CHANGES
+- **Package Renamed**: Package name changed from `@contact-biosolutions/fh-brand-kit` to `@contact-biosolutions/firehawk-brand-kit`
+- **Repository Renamed**: GitHub repository renamed from `Contact-BioSolutions/fh-brand-kit` to `Contact-BioSolutions/firehawk-brand-kit`
+
+### Migration Guide
+
+All consuming projects must update their dependencies:
+
+**1. Update package.json:**
+```json
+{
+  "dependencies": {
+-   "@contact-biosolutions/fh-brand-kit": "^0.3.0"
++   "@contact-biosolutions/firehawk-brand-kit": "^0.4.0"
+  }
+}
+```
+
+**2. Update import statements:**
+```js
+// Find and replace all imports
+- import { colors } from '@contact-biosolutions/fh-brand-kit'
++ import { colors } from '@contact-biosolutions/firehawk-brand-kit'
+
+// Tailwind config
+- presets: [require('@contact-biosolutions/fh-brand-kit/tailwind/preset')]
++ presets: [require('@contact-biosolutions/firehawk-brand-kit/tailwind/preset')]
+```
+
+**3. Reinstall dependencies:**
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
 ## [0.2.0] - 2025-08-15
 
 ### Added
@@ -92,7 +242,7 @@ const firehawkOrange = colors.brand.secondary[500]; // #F55A2B
 - **CI/CD Pipeline**: GitHub Actions for automated testing and publishing
 
 #### Core Features
-- **Scoped Package**: `@contact-biosolutions/fh-brand-kit`
+- **Scoped Package**: `@contact-biosolutions/firehawk-brand-kit`
 - **Multi-format Support**: ESM, CJS, and TypeScript definitions
 - **Type Safety**: Complete TypeScript integration
 - **Cross-platform**: Works with Next.js, React, Vue, and other frameworks

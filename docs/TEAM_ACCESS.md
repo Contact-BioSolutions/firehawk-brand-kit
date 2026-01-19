@@ -2,7 +2,7 @@
 
 ## Repository Access
 
-**GitHub Repository**: https://github.com/Contact-BioSolutions/fh-brand-kit
+**GitHub Repository**: https://github.com/Contact-BioSolutions/firehawk-brand-kit
 **Visibility**: Internal (Contact BioSolutions organization members only)
 **Package Registry**: GitHub Packages
 
@@ -24,7 +24,7 @@ echo "//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN" >> ~/.npmrc
 ### 2. Install the Package
 
 ```bash
-npm install @contact-biosolutions/fh-brand-kit
+npm install @contact-biosolutions/firehawk-brand-kit
 ```
 
 ### 3. Project Integration
@@ -33,7 +33,7 @@ npm install @contact-biosolutions/fh-brand-kit
 ```js
 // tailwind.config.js
 module.exports = {
-  presets: [require('@contact-biosolutions/fh-brand-kit/tailwind/preset')],
+  presets: [require('@contact-biosolutions/firehawk-brand-kit/tailwind/preset')],
   content: [
     './src/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -44,7 +44,7 @@ module.exports = {
 #### Sanity Studio Projects
 ```js
 // sanity.config.ts
-import '@contact-biosolutions/fh-brand-kit/css/base.css'
+import '@contact-biosolutions/firehawk-brand-kit/css/base.css'
 // ... rest of config
 ```
 
@@ -66,10 +66,10 @@ import '@contact-biosolutions/fh-brand-kit/css/base.css'
 
 ```bash
 # Update to latest version
-npm update @contact-biosolutions/fh-brand-kit
+npm update @contact-biosolutions/firehawk-brand-kit
 
 # Or install specific version
-npm install @contact-biosolutions/fh-brand-kit@0.2.0
+npm install @contact-biosolutions/firehawk-brand-kit@0.2.0
 ```
 
 ## Team Permissions
@@ -103,7 +103,7 @@ npm ERR! 404 Not Found - GET https://npm.pkg.github.com/@contact-biosolutions%2f
 
 #### Version Conflicts
 ```
-npm ERR! peer dep missing: @contact-biosolutions/fh-brand-kit@^0.1.0
+npm ERR! peer dep missing: @contact-biosolutions/firehawk-brand-kit@^0.1.0
 ```
 
 **Solution**: Update package version in your project dependencies.

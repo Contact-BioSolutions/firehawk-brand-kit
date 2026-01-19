@@ -63,21 +63,21 @@ cb-favicon-32x32.png
 ### In Code
 ```js
 // Import assets as modules (if using bundler)
-import CBLogo from '@contact-biosolutions/fh-brand-kit/assets/logos/primary/cb-logo-primary.svg';
-import SeedIcon from '@contact-biosolutions/fh-brand-kit/assets/icons/industry/seed.svg';
+import CBLogo from '@contact-biosolutions/firehawk-brand-kit/assets/logos/primary/cb-logo-primary.svg';
+import SeedIcon from '@contact-biosolutions/firehawk-brand-kit/assets/icons/industry/seed.svg';
 ```
 
 ### In CSS
 ```css
 .logo {
-  background-image: url('@contact-biosolutions/fh-brand-kit/assets/logos/primary/cb-logo-primary.svg');
+  background-image: url('@contact-biosolutions/firehawk-brand-kit/assets/logos/primary/cb-logo-primary.svg');
 }
 ```
 
 ### Direct URL Access
 Assets are also available via direct paths when package is installed:
 ```
-node_modules/@contact-biosolutions/fh-brand-kit/src/assets/logos/...
+node_modules/@contact-biosolutions/firehawk-brand-kit/src/assets/logos/...
 ```
 
 ## Adding New Assets

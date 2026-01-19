@@ -1,11 +1,11 @@
-# @contact-biosolutions/fh-brand-kit
+# @contact-biosolutions/firehawk-brand-kit
 
 Contact BioSolutions brand kit with design tokens and Tailwind CSS configuration for consistent branding across all projects.
 
 ## Installation
 
 ```bash
-npm install @contact-biosolutions/fh-brand-kit
+npm install @contact-biosolutions/firehawk-brand-kit
 ```
 
 ## Quick Start
@@ -15,7 +15,7 @@ npm install @contact-biosolutions/fh-brand-kit
 ```js
 // tailwind.config.js
 module.exports = {
-  presets: [require('@contact-biosolutions/fh-brand-kit/tailwind/preset')],
+  presets: [require('@contact-biosolutions/firehawk-brand-kit/tailwind/preset')],
   content: [
     './src/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -27,7 +27,7 @@ module.exports = {
 ### Using Design Tokens in JavaScript/TypeScript
 
 ```js
-import { colors, typography, spacing } from '@contact-biosolutions/fh-brand-kit';
+import { colors, typography, spacing } from '@contact-biosolutions/firehawk-brand-kit';
 
 // Access brand colors
 const primaryColor = colors.brand.primary[600];
@@ -42,7 +42,7 @@ const bodySize = typography.fontSize.base;
 
 ```css
 /* In your main CSS file */
-@import '@contact-biosolutions/fh-brand-kit/css/base.css';
+@import '@contact-biosolutions/firehawk-brand-kit/css/base.css';
 ```
 
 ## Usage Examples
@@ -51,13 +51,13 @@ const bodySize = typography.fontSize.base;
 
 1. Install the package:
 ```bash
-npm install @contact-biosolutions/fh-brand-kit
+npm install @contact-biosolutions/firehawk-brand-kit
 ```
 
 2. Update your `tailwind.config.js`:
 ```js
 module.exports = {
-  presets: [require('@contact-biosolutions/fh-brand-kit/tailwind/preset')],
+  presets: [require('@contact-biosolutions/firehawk-brand-kit/tailwind/preset')],
   content: [
     './src/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -67,7 +67,7 @@ module.exports = {
 
 3. Import base styles in your root layout or main CSS:
 ```css
-@import '@contact-biosolutions/fh-brand-kit/css/base.css';
+@import '@contact-biosolutions/firehawk-brand-kit/css/base.css';
 ```
 
 ### Available Tokens

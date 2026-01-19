@@ -3,7 +3,7 @@
 
 // tailwind.config.js
 export const tailwindConfig = {
-  presets: [require('@contact-biosolutions/fh-brand-kit/tailwind/preset')],
+  presets: [require('@contact-biosolutions/firehawk-brand-kit/tailwind/preset')],
   content: [
     './src/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -21,7 +21,7 @@ export const tailwindConfig = {
 
 // app/globals.css
 export const globalCSS = `
-@import '@contact-biosolutions/fh-brand-kit/css/base.css';
+@import '@contact-biosolutions/firehawk-brand-kit/css/base.css';
 
 /* Additional project styles */
 .container {

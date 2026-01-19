@@ -7,7 +7,7 @@
 ```js
 // tailwind.config.js
 module.exports = {
-  presets: [require('@contact-biosolutions/fh-brand-kit/tailwind/preset')],
+  presets: [require('@contact-biosolutions/firehawk-brand-kit/tailwind/preset')],
   content: [
     './src/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -17,7 +17,7 @@ module.exports = {
 
 ```css
 /* app/globals.css */
-@import '@contact-biosolutions/fh-brand-kit/css/base.css';
+@import '@contact-biosolutions/firehawk-brand-kit/css/base.css';
 ```
 
 ### Sanity Studio Integration
@@ -32,7 +32,7 @@ export default defineConfig({
     components: {
       layout: (props) => {
         // Import brand styles
-        import('@contact-biosolutions/fh-brand-kit/css/base.css')
+        import('@contact-biosolutions/firehawk-brand-kit/css/base.css')
         return props.renderDefault(props)
       }
     }
@@ -43,7 +43,7 @@ export default defineConfig({
 ### React Component Examples
 
 ```jsx
-import { colors } from '@contact-biosolutions/fh-brand-kit';
+import { colors } from '@contact-biosolutions/firehawk-brand-kit';
 
 // Using design tokens directly
 const Button = ({ variant = 'primary', children, ...props }) => {
@@ -152,7 +152,7 @@ const Hero = () => (
 ```js
 // tailwind.config.js
 module.exports = {
-  presets: [require('@contact-biosolutions/fh-brand-kit/tailwind/preset')],
+  presets: [require('@contact-biosolutions/firehawk-brand-kit/tailwind/preset')],
   theme: {
     extend: {
       // Add project-specific overrides
@@ -175,7 +175,7 @@ import {
   typography, 
   spacing,
   tailwindConfig 
-} from '@contact-biosolutions/fh-brand-kit';
+} from '@contact-biosolutions/firehawk-brand-kit';
 
 // Use in styled-components
 const StyledButton = styled.button`
