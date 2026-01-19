@@ -1,5 +1,5 @@
 export { colors } from './tokens/colors';
-export { typography } from './tokens/typography';
+export { typography, googleFontsUrl } from './tokens/typography';
 export { spacing, borderRadius, boxShadow } from './tokens/spacing';
 export { tailwindConfig } from './tailwind/config';
 
